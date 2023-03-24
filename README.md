@@ -1,5 +1,5 @@
 # Exam
 
 ## Authors
-Kamil Surlas
+Kamil Surlas  
 Michał Wilkosz
