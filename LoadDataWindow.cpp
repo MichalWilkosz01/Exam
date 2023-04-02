@@ -1,4 +1,5 @@
 #include "LoadDataWindow.h"
+#include "qmessagebox.h"
 #include "ui_LoadWindow.h"
 #include "MainApp.h"
 LoadDataWindow::LoadDataWindow(QWidget *parent, FileHandling* fileProgram) :
@@ -19,13 +20,30 @@ LoadDataWindow::~LoadDataWindow()
 void LoadDataWindow::on_loadStudents_clicked()
 {
     FileHandlingProgram->chooseStudentsFilepath();
-    FileHandlingProgram->loadStudents();
+    try {
+        FileHandlingProgram->loadStudents();
+    }
+    catch(std::runtime_error e) {
+        QMessageBox msg(this);
+        msg.setText(e.what());
+        msg.show();
+        msg.exec();
+    }
 
 }
 void LoadDataWindow::on_loadQuestions_clicked()
 {
     FileHandlingProgram->chooseQuestionsFilepath();
-    FileHandlingProgram->loadQuestions();
+    try {
+        FileHandlingProgram->loadQuestions();
+    }
+    catch(std::runtime_error e) {
+        QMessageBox msg(this);
+        msg.setText(e.what());
+        msg.show();
+        msg.exec();
+    }
+
 }
 void LoadDataWindow::on_loadedStudents_OK(QString studentsFilepath)
 {

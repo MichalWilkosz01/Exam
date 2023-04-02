@@ -28,6 +28,9 @@ void FileHandling::loadStudents()
 
 
             line = stream.readLine();
+            if(!line.contains("; ")) {
+                throw std::runtime_error("Wybrano nieprawidłowy plik z listą studentów!");
+            }
             dividedLine = line.split("; ", Qt::SkipEmptyParts);
 
             for (auto iterator = dividedLine.begin(); iterator != dividedLine.end(); iterator++) {
@@ -51,21 +54,30 @@ void FileHandling::loadQuestions()
         QString unitNumber;
         QString question;
         QString questionHeading;
-
         std::string check;
-
         int howManyUnits = 0;
+        bool isFirstLine = true;
 
         while(stream.atEnd()==false) {
             unitNumber = stream.readLine();
             check = unitNumber.toStdString();
+            if(isFirstLine) {
+                isFirstLine = false;
+
+                if(check.find("Blok")) {
+                    qDebug() << "tu";
+                    throw std::runtime_error("Wybrano niepoprawny plik z pytaniami");
+                }
+            }
             if (!check.find("Blok")) {
                 howManyUnits++;
                 units.push_back(Questions());
             }
 
+
         }
         questionsFile.close();
+
         questionsFile.open(QIODevice::ReadOnly | QIODevice::Text);
         QTextStream secondStream(&questionsFile);
         int line = 1;
@@ -104,6 +116,7 @@ void FileHandling::loadQuestions()
     emit questionsLoaded(questionsFilepath);
 
     }
+
 }
 
 void FileHandling::chooseQuestionsFilepath()

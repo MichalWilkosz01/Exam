@@ -66,7 +66,7 @@ void MainWindow::on_finishExam_clicked()
 {
     mainApp->rateAnswer(ui->listaOcen->currentText().toDouble());
     ui->stackedWidget->setCurrentIndex(0);
-    mainApp->finishExam();
+    mainApp->endExam();
 }
 
 
