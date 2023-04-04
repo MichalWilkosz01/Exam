@@ -1,0 +1,32 @@
+Blok 1:
+1. Typy danych i obliczenia matematyczne
+(fundamentalne typy danych, zasady wykonywania obliczeń, dzielenie całkowite/rzeczywiste,
+funkcje matematyczne, przykład optymalizacja obliczeń).
+2. Instrukcje sterujące
+(instrukcje warunkowe, instrukcje iteracyjne, dobór typu instrukcji do zadania, 
+optymalizacja instrukcji warunkowych i iteracyjnych, tabelaryzacja logiki).
+3. Operatory
+(przykłady użycia operatorów arytmetycznych, logicznych i złożonych operatory przypisania, 
+post/pre inkrementacja, optymalizacja wyrażeń logicznych).
+4. Operacje WE/WY
+(wyświetlanie tekstu i zmiennych, znaki sterujące w tekście, wczytywanie liczb i znaków do zmiennych, 
+wyświetlanie tablic jedno i dwuwymiarowych, sterowanie precyzją i formatem wyświetlania).
+Blok 2:
+1. Klasy
+(koncepcja programowania obiektowego, pojęcie klasy/instancji, zasada enkapsulacji – pola i akcesory, 
+składniki statyczne i instancyjne, korzyści z enkapsulacji).
+2. Konstruktory i destruktor
+(pojęcie konstruktora/destruktora, rodzaje konstruktorów, lista inicjalizacyjna konstruktora, 
+inicjalizacja pól klasy, kolejność wywoływania konstruktorów w kompozycji i dziedziczeniu).
+3. Instancje stałe
+(co to jest instancja stała, kiedy występuje, metody do pracy na instancjach stałych, 
+inicjalizacja pól instancji stałej, pola mutable).
+4. Interakcje obiektowe
+(asocjacja, agregacja, kompozycja, 
+różnice miedzy asocjacją a agregacją, różnice miedzy agregacją a kompozycją).
+5. Dziedziczenie i polimorfizm obiektowy
+(dziedziczenie, sekcja prywatna i chroniona, metody wirtualne i polimorfizm, 
+rodzaje dziedziczenia, wyjątki przy dziedziczeniu/napisanie składników).
+6. Hierarchie klas
+(rodzaje hierarchii dziedziczenia, dziedziczenie wielopoziomowe, klasa abstrakcyjna, 
+dziedziczenie wielobazowe, dziedziczenie wirtualne, ).

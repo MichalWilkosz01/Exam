@@ -1,0 +1,12 @@
+Michał Kompilator
+3.2; 3.6
+Szymon Wskaźnik
+4.5; 5.5
+Michał Wyciek
+3.5; 5.97
+Kamil Wyjatek
+3.5; 4.2
+Radek Referencja
+2.0; 3.97
+Karol Kompilacja
+5.5; 3.97
